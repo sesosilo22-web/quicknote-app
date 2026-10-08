@@ -5,97 +5,98 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color:gray;
-    color:black
+    background-color: gray;
+    color: black;
 }
 
 header {
-    background-color:rgb(64, 64, 105);
+    background-color: rgb(64, 64, 105);
     color: white;
     text-align: center;
     padding: 35px 22px;
 }
 
 header h1 {
-    margin: 0, 0, 19px;
+    margin: 0 0 19px;
 }
 
 header p {
     margin: 0;
 }
 
-main { max-width: 700px;
-     margin: 30px auto;
-      padding: 0 20px; 
+h2 {
+    color: black;
 }
 
-section { background-color: white; 
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
     padding: 25px;
-    margin-bottom: 25px; 
+    margin-bottom: 25px;
     border-radius: 10px;
 }
 
-form { display: flex;
-     align-items: center;
-      gap: 10px; 
-      flex-wrap: wrap;
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
-form label { 
+
+form label {
     font-weight: bold;
 }
 
-.category-work{
-    border-left: darkred;
+form input,
+form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.category-personal{
-    border-left: teal;
+.category-work {
+    border-left: 6px solid darkred;
 }
 
-.category-study{
-    border-left: blue;
+.category-personal {
+    border-left: 6px solid teal;
+}
+
+.category-study {
+    border-left: 6px solid blue;
 }
 
 #error-message {
     color: red;
 }
 
-@media(max-width: 600px){
-    form{
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(5, 5, 143);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+@media (max-width: 600px) {
+    form {
         flex-direction: column;
         align-items: stretch;
-
     }
 
     form input,
     form select,
-    form button,
+    form button {
         width: 100%;
+    }
 }
-
-form input, form select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-h2 {
-    color: black
-}
-
-button { padding: 10px 15px;
-     border: none;
-     border-radius: 5px;
-     background-color: rgb(5, 5, 143);
-     color: white; 
-     cursor: pointer; 
- }
-
- button:hover {
-    background-color: aqua;
- }
- 
-
-
-
-
