@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QickNotes</title>
+        <link rel = "stylesheet" href="styles.css"/>
+        <script src="script.js" defer></script>
+    </head>
+
+     <body>
+
+        <header>
+            <h1>QuickNotes</h1>
+            <p>keptures information before it disappears</p>
+
+        </header>
+        <main>
+             <section>
+             <h2>Add notes</h2>
+
+                <form id="note-form">
+                <p>
+                   <label for="note-text">Note</label>
+                    <input 
+                    text="text"
+                    id="note-text"
+                    name="note"
+                    placeholder="notes">
+
+                    <label for ="category">Category</label>
+                    <select
+                     id="category"
+                    name="category">
+                    <option value="none">none</option>
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                    <option value="study">Study</option>
+
+                </select>
+                <button type="submit">Add Notes</button>  
+                </p>
+                </form>
+                <p id="error-message"></p>
+
+             </section>
+
+              <section>
+
+                <h2>Your notes</h2>
+                <input
+                id="search-input"
+                type="search"
+                placeholder="Search notes.">
+                
+                <p id="note-count">0 notes</p>
+                <ul id="note-list"></ul>
+               </section>
+                
+             
+        </main>
+    <footer>
+        <p>&copy;Quicknotes</p>
+    </footer>
+
+    </body>
+</html>
